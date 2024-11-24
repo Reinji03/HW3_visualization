@@ -57,8 +57,6 @@ gdf_korea_sido.plot(figsize=(10,6)) # 데이터 plot하기
 """
 st.code(code, language="python")
 
-gdf_korea_sido.plot(figsize=(10,6)) # 데이터 plot하기
-
 st.image("대한민국 지도.png", caption="대한민국 지도", use_column_width=True)
 
 st.write('### 2. geojson 데이터를 이용한 대한민국 지도 시각화')
