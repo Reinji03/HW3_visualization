@@ -142,8 +142,6 @@ alt.Chart(korea_vega,title="대한민국지도").mark_geoshape().encode(
 """
 st.code(code, language="python")
 
-gdf_korea_sido.plot(figsize=(10,6)) # 데이터 plot하기
-
 st.image("visualization.png", caption="행정구역별 지도", use_column_width=True)
 
 st.write('### 3. 시도별(행정구역별) 합계 출산율 데이터 전처리')
