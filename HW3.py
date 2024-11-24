@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title('🔎시도별 합계 출산율 시각화하기')
 
-st.write('### 1. GeoPandas에서 지리정보 생성하기')
+st.write('#### 1. GeoPandas에서 지리정보 생성하기')
 st.markdown(
   '''
   - GeoJSON 파일로 저장하기
@@ -59,7 +59,7 @@ st.code(code, language="python")
 
 st.image("대한민국 지도.png", caption="대한민국 지도", use_column_width=True)
 
-st.write('### 2. geojson 데이터를 이용한 대한민국 지도 시각화')
+st.write('#### 2. geojson 데이터를 이용한 대한민국 지도 시각화')
 
 st.markdown(
   '''
@@ -144,7 +144,7 @@ st.code(code, language="python")
 
 st.image("visualization.png", caption="행정구역별 지도", use_column_width=True)
 
-st.write('### 3. 시도별(행정구역별) 합계 출산율 데이터 전처리')
+st.write('#### 3. 시도별(행정구역별) 합계 출산율 데이터 전처리')
 
 st.markdown(
   '''
@@ -232,7 +232,7 @@ df_korea_birth['행정구역별'] = df_korea_birth['행정구역별'].replace({
 df_korea_birth['행정구역'] = df_korea_birth['행정구역별'].str[:2]
 df_korea_birth
 
-st.write('### 4. 시도별(행정구역별) 합계 출산율을 지도에 시각화하기')
+st.write('#### 4. 시도별(행정구역별) 합계 출산율을 지도에 시각화하기')
 
 st.markdown(
   '''
